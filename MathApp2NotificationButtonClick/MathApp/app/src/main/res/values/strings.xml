@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MathApp</string>
+
+    <!-- created the string resources to be able to use them in activity_main.xml -->
+    <string name="question_text">Hey Johnbosco, is 19 a prime number?</string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+
+    <!--creating the toast messages for correct and for incorrect response -->
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
+
+</resources>

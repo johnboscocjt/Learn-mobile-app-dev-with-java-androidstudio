@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--type the layout that  you want for the application-->
+<!--the outer entire screen-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+<!-- text view which will display the questions-->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:text="@string/question_text" />
+
+<!-- another linear layout-->
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!--two buttons for the inner layout -->
+    <Button
+        android:id="@+id/true_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/true_button" />
+
+    <Button
+        android:id="@+id/false_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/false_button" />
+
+</LinearLayout>
+
+</LinearLayout>
