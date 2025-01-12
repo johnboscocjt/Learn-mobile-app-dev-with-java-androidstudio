@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--declarative approach here in xml-->
+<!--type the layout that  you want for the application-->
+<!--the outer entire screen, acts as the container for the components in the application-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:fitsSystemWindows="true"
+    >
+    <!-- Add space for the status bar by using  android:fitsSystemWindows="true"   -->
+
+
+    <!-- A top AppBar with MathApp title -->
+    <!-- A top AppBar with MathApp title, adding paddingTop to avoid overlapping with status bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="@string/app_name"
+        android:titleTextColor="@android:color/white"
+        />
+
+
+
+    <!-- new for inner contents to position at the center -->
+    <LinearLayout
+        android:id="@+id/r"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+
+            <!--declaration of user interface components  for the android app  -->
+            <TextView
+                android:id="@+id/question_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="24dp"
+                />
+
+            <!--view group and views-->
+            <!-- another linear layout-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--two buttons for the inner layout -->
+
+                <Button
+                    android:id="@+id/true_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/like"
+                    android:text="@string/true_button" />
+
+                <Button
+                    android:id="@+id/false_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/dislike"
+                    android:text="@string/false_button" />
+
+                <!--Adding the next button-->
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next_button" />
+
+            <!-- new button for going to the cheat activity    -->
+            <Button
+                android:id="@+id/btn_cheat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "@string/btn_cheat"
+                />
+
+    </LinearLayout>
+
+</LinearLayout>

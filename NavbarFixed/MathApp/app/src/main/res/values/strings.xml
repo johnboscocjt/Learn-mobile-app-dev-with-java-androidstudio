@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MathApp</string>
+
+    <!-- created the string resources to be able to use them in activity_main.xml -->
+    <!--<string name="question_text">Hey Johnbosco, is 19 a prime number?</string>-->
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+
+    <!--creating the toast messages for correct and for incorrect response -->
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
+
+    <!--creating for next button -->
+    <string name="next_button">Next</string>
+
+    <!--questions created to be asked-->
+    <string name="question_1">Hey Johnbosco, is 19 a prime number?</string>
+    <string name="question_2">Hey j, is 5 a prime number?</string>
+    <string name="question_3">Hey a, is 8 a prime number?</string>
+    <string name="question_4">Hey d, is 19 a prime number?</string>
+    <string name="question_5">Hey 3, is 51 a prime number?</string>
+
+    <!--creating for cheat page button -->
+    <string name="btn_cheat">CheatPage</string>
+
+    <string name="btn_cheat_description">Cheat Page Description</string>
+
+    <!-- back to the home page -->
+    <string name="btn_main">Back to Main/Home</string>
+
+</resources>

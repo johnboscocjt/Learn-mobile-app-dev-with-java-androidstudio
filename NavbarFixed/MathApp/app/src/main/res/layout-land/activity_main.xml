@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--declarative approach here in xml-->
+<!--type the layout that  you want for the application-->
+<!--the outer entire screen, acts as the container for the components in the application-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--declaration of user interface components  for the android app  -->
+    <!--android app contains at least one activity  -->
+
+    <!-- text view which will display the questions-->
+    <!--<TextView-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:padding="24dp"-->
+    <!--    android:text="@string/question_text" />-->
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="24dp"
+        />
+
+    <!--view group and views-->
+    <!-- another linear layout-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <!--two buttons for the inner layout -->
+        <Button
+            android:id="@+id/true_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/true_button"
+            android:drawableLeft="@drawable/like"
+            />
+
+        <Button
+            android:id="@+id/false_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/false_button"
+            android:drawableRight="@drawable/dislike"
+            />
+
+        <!--Adding the next button-->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="@string/next_button" />
+
+    <!-- new button for going to the cheat activity    -->
+    <Button
+        android:id="@+id/btn_cheat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:text= "@string/btn_cheat"
+        />
+
+</FrameLayout>
